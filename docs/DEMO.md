@@ -59,7 +59,7 @@ The first request returns the fictional page. The second returns 401. The GUI lo
 
 ## Live run evidence
 
-A fresh local browser walkthrough returned **HTTP 200** for the portal and **HTTP 401** for the synthetic form submission. The server emitted one `GET /` event and one `POST /session` event. The log contains the body byte count but not the submitted values.
+A fresh local loopback run returned **HTTP 200** for the portal and **HTTP 401** for the synthetic form submission. The server emitted one `GET /` event and one `POST /session` event. The log contains the body byte count but not the submitted values.
 
 The images below are visual evidence cards rendered from the actual HTTP response bodies and server event lines produced by that loopback run. They are not raw desktop screenshots of the Tkinter control panel.
 

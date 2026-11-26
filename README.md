@@ -1,5 +1,7 @@
 # Tiny HTTP Honeypot
 
+[![Tests](https://github.com/Json8913/tiny-honeypot/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Json8913/tiny-honeypot/actions/workflows/tests.yml)
+
 A small, low-interaction web decoy for a home lab or a network you are authorised to monitor. It serves a fictional operations portal and records basic request metadata so you can see which paths were touched.
 
 **Author:** Jason Santos Ritchie
