@@ -12,6 +12,14 @@ Each request produces one JSON line with the time, source IP and port, HTTP meth
 
 The honeypot deliberately does not read or save form contents. It does not record usernames, passwords, cookies, authorization headers, query-string values, or browser details. The sign-in form is only a decoy; a submission returns a generic failure.
 
+## Desktop control panel
+
+Run:
+
+    python3 gui.py
+
+The window starts and stops the local server and displays request metadata as events arrive. It defaults to `127.0.0.1:8080`. Keep the portal title fictional and use an authorised, isolated test network.
+
 ## Run it
 
 Requires Python 3.10 or newer. No third-party packages are needed.
