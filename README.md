@@ -2,6 +2,8 @@
 
 This is a small, low-interaction decoy web portal for a home lab or a network you are authorised to monitor. It serves a believable fictional operations sign-in page and records basic connection metadata so you can review which paths were touched.
 
+**Author:** Jason Santos Ritchie
+
 It is an early learning project. It is not a production honeypot platform, a firewall, or a way to secure a server.
 
 ## What it records
