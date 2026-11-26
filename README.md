@@ -38,6 +38,10 @@ Choose another port if 18080 is occupied:
 PORT=18081 bash scripts/live_demo.sh
 ```
 
+## Live demo evidence
+
+See [docs/DEMO.md](docs/DEMO.md) for visual evidence from a fresh loopback run: the fictional portal response, the generic 401 response, and the event records emitted by the server. The images are rendered from the actual HTTP response bodies and event lines observed during that run; they are not raw desktop screenshots.
+
 ## Run the unit tests
 
 ```sh

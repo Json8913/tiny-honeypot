@@ -57,9 +57,25 @@ curl --noproxy '*' -i -X POST --data 'username=demo-user&password=fake-test-only
 
 The first request returns the fictional page. The second returns 401. The GUI log shows the method, path, source, and body byte count; it does not show either sample value. Select **Stop** when finished.
 
-## Evidence to capture
+## Live run evidence
 
-For a portfolio walkthrough, capture the actual running control panel in two states: listening on loopback, then showing the GET and POST events. Capture the terminal after the live script and unit tests finish so the status codes and passing test count are visible. Do not include real usernames, passwords, tokens, or public network addresses in screenshots.
+A fresh local browser walkthrough returned **HTTP 200** for the portal and **HTTP 401** for the synthetic form submission. The server emitted one `GET /` event and one `POST /session` event. The log contains the body byte count but not the submitted values.
+
+The images below are visual evidence cards rendered from the actual HTTP response bodies and server event lines produced by that loopback run. They are not raw desktop screenshots of the Tkinter control panel.
+
+### Portal response — HTTP 200
+
+![Fictional Northstar portal response from the local honeypot](screenshots/01-portal-response.png)
+
+### Generic session response — HTTP 401
+
+![Generic response returned after a synthetic form submission](screenshots/02-session-response.png)
+
+### Request events
+
+![GET and POST events emitted by the running honeypot](screenshots/03-request-events.png)
+
+The form used only the clearly synthetic values `demo-user` and `fake-test-only`. Neither value appears in the event records.
 
 ## Limits
 
